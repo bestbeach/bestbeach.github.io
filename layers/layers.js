@@ -1,15 +1,15 @@
 var wms_layers = [];
 
 
-        var lyr_GoogleSatellite_0 = new ol.layer.Tile({
-            'title': 'Google Satellite',
+        var lyr_GoogleHybrid_0 = new ol.layer.Tile({
+            'title': 'Google Hybrid',
             'type': 'base',
             'opacity': 1.000000,
             
             
             source: new ol.source.XYZ({
-    attributions: ' &middot; <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Google Maps</a>',
-                url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'
+    attributions: ' &middot; <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+                url: 'https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}'
             })
         });
 var lyr_Koliinacijanobakterija_1 = new ol.layer.Image({
@@ -52,17 +52,5 @@ var lyr_Zagaenje_3 = new ol.layer.Image({
                             })
                         });
 
-        var lyr_GoogleLabels_4 = new ol.layer.Tile({
-            'title': 'Google Labels',
-            'type': 'base',
-            'opacity': 1.000000,
-            
-            
-            source: new ol.source.XYZ({
-    attributions: ' &middot; <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Google Maps</a>',
-                url: 'https://mt1.google.com/vt/lyrs=h&x={x}&y={y}&z={z}'
-            })
-        });
-
-lyr_GoogleSatellite_0.setVisible(true);lyr_Koliinacijanobakterija_1.setVisible(true);lyr_Morskavegetacija_2.setVisible(true);lyr_Zagaenje_3.setVisible(true);lyr_GoogleLabels_4.setVisible(true);
-var layersList = [lyr_GoogleSatellite_0,lyr_Koliinacijanobakterija_1,lyr_Morskavegetacija_2,lyr_Zagaenje_3,lyr_GoogleLabels_4];
+lyr_GoogleHybrid_0.setVisible(true);lyr_Koliinacijanobakterija_1.setVisible(true);lyr_Morskavegetacija_2.setVisible(true);lyr_Zagaenje_3.setVisible(true);
+var layersList = [lyr_GoogleHybrid_0,lyr_Koliinacijanobakterija_1,lyr_Morskavegetacija_2,lyr_Zagaenje_3];
